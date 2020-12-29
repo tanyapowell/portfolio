@@ -1,3 +1,5 @@
+/* eslint-disable */
+ 
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
 });

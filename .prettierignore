@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+coverage
+.next
+.github
+.eslintrc.js
+_app.tsx
+_error.tsx

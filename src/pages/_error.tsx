@@ -1,19 +1,25 @@
-import Error from 'next/error'
+import Error from 'next/error';
 
 export async function getServerSideProps() {
-  const res = await fetch('https://api.github.com/repos/vercel/next.js')
-  const errorCode = res.ok ? false : res.status
-  const json = await res.json()
+    const res = await fetch('https://api.github.com/repos/vercel/next.js');
+    const errorCode = res.ok ? false : res.status;
+    const json = await res.json();
 
-  return {
-    props: { errorCode, stars: json.stargazers_count },
-  }
+    return {
+        props: { errorCode, stars: json.stargazers_count },
+    };
 }
 
-export default function Page({ errorCode, stars }) {
-  if (errorCode) {
-    return <Error statusCode={errorCode} />
-  }
+interface Props {
+    errorCode: number;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    stars: any;
+}
 
-  return <div>Next stars: {stars}</div>
+export default function Page({ errorCode, stars }: Props) {
+    if (errorCode) {
+        return <Error statusCode={errorCode} />;
+    }
+
+    return <div>Next stars: {stars}</div>;
 }

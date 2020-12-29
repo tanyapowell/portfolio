@@ -1,6 +1,6 @@
 export type Meta = {
-  title: String,
-  description: String,
-  date: String,
-  readTime: Number,
+    title: string;
+    description: string;
+    date: string;
+    readTime: number;
 };
