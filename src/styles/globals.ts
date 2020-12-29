@@ -15,6 +15,6 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     color: #0D0C1D;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Quattrocento Sans', sans-serif;
   }
 `;
