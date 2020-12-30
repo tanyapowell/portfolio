@@ -1,14 +1,12 @@
 import type { AppProps } from 'next/app'
-import { ChakraProvider } from "@chakra-ui/react"
+import "tailwindcss/tailwind.css";
 
-import { theme } from '../styles/theme';
-import {Fonts} from '../styles/typography'
+import Layout from '../components/Layout';
 
 const App = ({ Component, pageProps }: AppProps) => (
-  <ChakraProvider theme={theme}>
-    <Fonts />
-    <Component {...pageProps} />
-  </ChakraProvider>
+    <Layout pageTitle="tanya title" description="tanya description">
+        <Component {...pageProps} />
+    </Layout>
 );
 
 export default App;
