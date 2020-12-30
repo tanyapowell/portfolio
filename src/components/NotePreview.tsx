@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@chakra-ui/react';
 import { Meta } from '../types';
 import HeadNote from './HeadNote';
 
@@ -17,7 +17,7 @@ interface Props {
 const NotePreview = ({ note }: Props) => {
     const {
         link,
-        module: { meta }
+        module: { meta },
     } = note;
 
     return (

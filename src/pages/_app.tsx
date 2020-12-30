@@ -1,12 +1,14 @@
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps } from 'next/app'
+import { ChakraProvider } from "@chakra-ui/react"
 
-import { GlobalStyle } from '../styles/globals';
+import { theme } from '../styles/theme';
+import {Fonts} from '../styles/typography'
 
 const App = ({ Component, pageProps }: AppProps) => (
-  <>
-    <GlobalStyle />
+  <ChakraProvider theme={theme}>
+    <Fonts />
     <Component {...pageProps} />
-  </>
+  </ChakraProvider>
 );
 
 export default App;

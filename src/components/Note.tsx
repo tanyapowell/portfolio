@@ -1,4 +1,6 @@
 import { Meta } from '../types';
+import { Container, Stack } from '@chakra-ui/react';
+
 import HeadNote from './HeadNote';
 
 interface Props {
@@ -8,10 +10,12 @@ interface Props {
 }
 
 const Note = ({ children, meta }: Props) => (
-    <>
-        <HeadNote meta={meta} />
-        <article>{children}</article>
-    </>
+    <Container>
+        <Stack spacing={8}>
+            <HeadNote meta={meta} />
+            <article>{children}</article>
+        </Stack>
+    </Container>
 );
 
 export default Note;
