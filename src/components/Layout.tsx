@@ -18,7 +18,7 @@ const Layout = ({ children, pageTitle, description }: Props) => (
     </Head>
     <main>
       <Header />
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-ful">{children}</div>
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-5/6 md:w-full">{children}</div>
     </main>
   </>
 );
