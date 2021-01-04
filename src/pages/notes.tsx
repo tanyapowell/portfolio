@@ -1,12 +1,16 @@
 import NotePreview from '../components/NotePreview';
 import { notes } from '../getAllNotes';
+import Text from '../components/Text';
+import Title from '../components/Title';
 
 const Notes = () => {
   return (
     <>
-      <h1 className="font-display font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-        Digital Gardening
-      </h1>
+      <Title>Blog</Title>
+      <Text>
+        Blah blah blah...I am a digital garden. Blah blah blah...I am a digital garden. Blah blah blah...I am a digital
+        garden
+      </Text>
       {notes.map((note) => (
         <NotePreview key={note.link} note={note} />
       ))}

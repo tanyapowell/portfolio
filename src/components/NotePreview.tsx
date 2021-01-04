@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { Meta } from '../types';
 import HeadNote from './HeadNote';
+import Link from './Link';
 
 type Note = {
   link: string;
@@ -21,12 +21,12 @@ const NotePreview = ({ note }: Props) => {
   } = note;
 
   return (
-    <div className="w-full border-solid border-b-2 border-light-blue-500 py-5">
-      <Link href={'/notes' + link}>
-        <a>
+    <div className="w-full border-solid border-b-2 border-light-blue-500 py-4">
+      <Link link={'/notes' + link}>
+        <>
           <HeadNote meta={meta} isPreview />
-          <p className="text-xl font-body">{meta.description}</p>
-        </a>
+          <p className="font-body">{meta.description}</p>
+        </>
       </Link>
     </div>
   );

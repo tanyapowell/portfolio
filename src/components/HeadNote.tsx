@@ -1,4 +1,5 @@
 import { Meta } from '../types';
+import Title from './Title';
 
 interface Props {
   meta: Meta;
@@ -7,13 +8,14 @@ interface Props {
 
 const HeadNote = ({ meta, isPreview }: Props) => {
   return isPreview ? (
-    <h2 className="font-display font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-      {meta.title}
-    </h2>
+    <div className="flex justify-between items-center">
+      <h2 className="font-display font-bold text-3xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+        {meta.title}
+      </h2>
+      <p className="font-body">{meta.date}</p>
+    </div>
   ) : (
-    <h1 className="font-display font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-      {meta.title}
-    </h1>
+    <Title>{meta.title}</Title>
   );
 };
 

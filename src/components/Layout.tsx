@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
+import Footer from './Footer';
 
 interface Props {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -19,6 +20,7 @@ const Layout = ({ children, pageTitle, description }: Props) => (
     <main>
       <Header />
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-5/6 md:w-full">{children}</div>
+      <Footer />
     </main>
   </>
 );
