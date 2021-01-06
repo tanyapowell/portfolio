@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #47a3f3;
+  background-color: #d81e5b;
   color: #fefefe;
 }
 
@@ -24,4 +24,9 @@ html {
   top: 0;
   backdrop-filter: saturate(180%) blur(20px);
   transition: background-color 0.1 ease-in-out;
+}
+
+a:hover {
+  color:#d81e5b;
+  fill: #d81e5b;
 }

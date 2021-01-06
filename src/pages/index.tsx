@@ -42,7 +42,7 @@ const Home = () => {
         touch with me via social media`}
       </Text>
 
-      <h2 className="font-display font-bold text-2xl md:text-4xl tracking-tight my-4 text-black dark:text-white">
+      <h2 className="font-display font-bold leading-relaxed text-2xl md:text-4xl my-4 text-gray-900">
         Talks and podcast appearances
       </h2>
       <Text>Check out some of the talks and podcast appearances I made during 2020</Text>
