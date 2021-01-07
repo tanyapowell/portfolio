@@ -1,5 +1,5 @@
-import Text from '../components/Text';
-import Title from '../components/Title';
+import Text from '@/components/Text';
+import Title from '@/components/Title';
 
 const About = () => (
   <>

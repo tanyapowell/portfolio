@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Header from './Header';
-import Footer from './Footer';
+
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 interface Props {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

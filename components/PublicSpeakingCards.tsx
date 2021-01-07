@@ -1,5 +1,5 @@
-import PublicSpeakingCard from '../components/PublicSpeakingCard';
-import { Talks } from '../types';
+import PublicSpeakingCard from '@/components/PublicSpeakingCard';
+import { Talks } from '@/utils/types';
 
 interface Props {
   talks: Talks[];

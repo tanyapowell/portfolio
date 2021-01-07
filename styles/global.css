@@ -27,6 +27,7 @@ html {
 }
 
 a:hover {
-  color:#d81e5b;
-  fill: #d81e5b;
+  color: #d81e5b;
+  fill: none;
+  stroke:#d81e5b
 }

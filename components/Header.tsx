@@ -1,18 +1,18 @@
-import Link from './Link';
+import Link from '@/components/Link';
 
 const navItems = [
   {
     name: 'About',
-    link: 'about'
+    link: 'about',
   },
   {
     name: 'Dashboard',
-    link: 'dashboard'
+    link: 'dashboard',
   },
   {
     name: 'Notes',
-    link: 'notes'
-  }
+    link: 'notes',
+  },
 ];
 
 const Header = () => (

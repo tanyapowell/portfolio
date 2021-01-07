@@ -1,25 +1,25 @@
 import { useEffect, useState } from 'react';
-import PublicSpeakingCards from '../components/PublicSpeakingCards';
-import Text from '../components/Text';
-import Title from '../components/Title';
+import PublicSpeakingCards from '@/components/PublicSpeakingCards';
+import Text from '@/components/Text';
+import Title from '@/components/Title';
 
 const words = ['software engineer', 'Londoner', 'mentor', 'public speaker'];
 const talks = [
   {
     title: 'Resilience through inclusion',
     link: 'https://resilience-brilliance.simplecast.com/episodes/episode-4-resilience-through-inclusion',
-    description: `You don’t need to be a coder to find inspiration from Charlene and Tanya's stories and ambition!`
+    description: `You don’t need to be a coder to find inspiration from Charlene and Tanya's stories and ambition!`,
   },
   {
     title: 'STEM TALKS: Black Women in Software Engineering',
     link: 'https://youtu.be/f1L6mfFW5zs',
-    description: `Talking with STEM Babe about Software Engineering and how I got started in the industry`
+    description: `Talking with STEM Babe about Software Engineering and how I got started in the industry`,
   },
   {
-    title: 'Blacks In Tech: The IT Factor EP:21Software Engineer',
+    title: 'Blacks In Tech: The IT Factor EP:21 Software Engineer',
     link: 'https://www.youtube.com/watch?v=GH00OsMmL4w',
-    description: `Tanya explains that she loves coding and the entire process of figuring out a problem. It’s an awesome episode. `
-  }
+    description: `Tanya explains that she loves coding and the entire process of figuring out a problem. It’s an awesome episode. `,
+  },
 ];
 
 const Home = () => {
@@ -42,7 +42,7 @@ const Home = () => {
         touch with me via social media`}
       </Text>
 
-      <h2 className="font-display font-bold leading-relaxed text-2xl md:text-4xl my-4 text-gray-900">
+      <h2 className="font-display font-bold leading-relaxed text-2xl md:text-4xl my-4 text-gray-800">
         Talks and podcast appearances
       </h2>
       <Text>Check out some of the talks and podcast appearances I made during 2020</Text>

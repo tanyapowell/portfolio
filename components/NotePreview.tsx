@@ -1,6 +1,6 @@
-import { Meta } from '../types';
-import HeadNote from './HeadNote';
-import Link from './Link';
+import { Meta } from '@/utils/types';
+import HeadNote from '@/components/HeadNote';
+import Link from '@/components/Link';
 
 type Note = {
   link: string;
@@ -10,6 +10,7 @@ type Note = {
 type Module = {
   meta: Meta;
 };
+
 interface Props {
   note: Note;
 }

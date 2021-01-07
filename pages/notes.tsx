@@ -1,7 +1,7 @@
-import NotePreview from '../components/NotePreview';
-import { notes } from '../getAllNotes';
-import Text from '../components/Text';
-import Title from '../components/Title';
+import { notes } from '@/utils/getAllNotes';
+import NotePreview from '@/components/NotePreview';
+import Text from '@/components/Text';
+import Title from '@/components/Title';
 
 const Notes = () => {
   return (

@@ -1,6 +1,5 @@
-import { Meta } from '../types';
-
-import HeadNote from './HeadNote';
+import { Meta } from '@/utils/types';
+import HeadNote from '@/components/HeadNote';
 
 interface Props {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
