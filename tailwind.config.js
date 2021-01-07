@@ -2,13 +2,13 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: ['./src/**/*.tsx'],
+  purge: ['./**/*.tsx'],
   theme: {
     // good to know: add default line height https://tailwindcss.com/docs/font-size#app
     extend: {
       fontFamily: {
-        body: ['Inter', ...defaultTheme.fontFamily.sans],
         display: ['Quattrocento Sans', ...defaultTheme.fontFamily.sans],
+        body: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         // custom light-gray tones
@@ -34,7 +34,7 @@ module.exports = {
       typography: (theme) => ({
         default: {
           css: {
-            color: theme('colors.gray.900'),
+            color: theme('colors.gray.700'),
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
