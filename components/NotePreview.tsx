@@ -18,7 +18,7 @@ interface Props {
 const NotePreview = ({ note }: Props) => {
   const {
     link,
-    module: { meta }
+    module: { meta },
   } = note;
 
   return (

@@ -6,4 +6,4 @@ function importAll(r: any) {
   }));
 }
 
-export const notes = importAll(require.context('../data/notes/', true, /\.mdx$/));
+export const notes = importAll(require.context('../pages/notes/', true, /\.mdx$/));
