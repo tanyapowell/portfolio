@@ -2,13 +2,12 @@ import React from 'react';
 
 import ExternalLink from '@/components/ExternalLink';
 import Link from '@/components/Link';
-import { email, github, instagram, linkedin, twitter } from '@/components/svgs';
+import { email, github, linkedin, twitter } from '@/components/svgs';
 
 const footerItems = [
   { platform: 'twitter', user: 'tanya_powell', svg: twitter },
   { platform: 'github', user: 'tanyapowell', svg: github },
-  { platform: 'linkedin', user: '/in/tanyapowell', svg: linkedin },
-  { platform: 'instagram', user: 'tanyawritescode', svg: github },
+  { platform: 'linkedin', user: '/in/tanyapowell', svg: linkedin }
 ];
 
 const Footer = () => (
