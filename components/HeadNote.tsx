@@ -8,8 +8,8 @@ interface Props {
 
 const HeadNote = ({ meta, isPreview }: Props) => {
   return isPreview ? (
-    <div className="flex justify-between items-center">
-      <h2 className="font-display font-bold leading-relaxed text-3xl md:text-4xl tracking-tight mb-4">{meta.title}</h2>
+    <div className="flex justify-between items-center mb-8">
+      <h2 className="font-display font-bold leading-relaxed text-3xl md:text-4xl tracking-tight">{meta.title}</h2>
       <p className="font-body">{meta.date}</p>
     </div>
   ) : (

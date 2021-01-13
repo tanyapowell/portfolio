@@ -10,7 +10,7 @@ interface Props {
 const Note = ({ children, meta }: Props) => (
   <main>
     <HeadNote meta={meta} />
-    <article className="leading-loose font-body">{children}</article>
+    <article className="leading-loose font-body prose lg:prose-x">{children}</article>
   </main>
 );
 

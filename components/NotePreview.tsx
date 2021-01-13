@@ -20,9 +20,8 @@ const NotePreview = ({ note }: Props) => {
     link,
     module: { meta },
   } = note;
-
   return (
-    <div className="w-full border-solid border-b-2 border-light-blue-500 py-4">
+    <div className="w-full border-solid border-b-2 border-light-blue-500 py-8">
       <Link link={'/notes' + link}>
         <>
           <HeadNote meta={meta} isPreview />
