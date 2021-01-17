@@ -1,0 +1,145 @@
+import BlogPost from "@/components/BlogPost";
+
+export const meta = {
+  title: "Beginner's Guide to Progressive Web Apps",
+  description: "Intro to Progressive Web Apps",
+  date: "11th February 2016",
+};
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+Last week I attended [Dean Hume’s](https://www.deanhume.com/) Progressive Web Apps for beginners talk. (Thanks to the [London Javascript Community](https://www.meetup.com/London-JavaScript-Community/) for setting it all up). During the talk, Dean provided us with an amazing reading list. This reading list contained the fundamentals of Progressive Web Apps and how to make your first one. Rather than keeping my notes in my notebook I thought I’d share them with you all.
+
+## What are Progressive Web Apps?
+
+> Progressive Web Apps are experiences that combine the best of the web and the best of apps. They are useful to users from the very first visit in a browser tab, no install required. As the user progressively builds a relationship with the app over time, it becomes more and more powerful. It loads quickly, even on flaky networks, sends relevant push notifications, has an icon on the home screen, and loads as a top-level, full screen experience.
+
+There are three major benefits to using Progressive Web Apps for users:
+
+1. More engagement
+2. Faster
+3. Reliability Improvements
+
+### Service Workers
+
+Before discussing the user benefits of Progressive Web Apps it’s important to know what the key to them is - **Service Workers**.
+
+A service worker is a script that stands between your website and the network, giving you, among other things, the ability to intercept network requests and respond to them in different ways.
+
+Three things to know about Service Workers:
+
+1. They sit on a separate thread
+2. They are HTTPS Only
+3. They are the key to Progressive Web Apps
+
+For a more thorough explanation of Service Workers visit [Making A Service Worker: A Case Study.](https://www.smashingmagazine.com/2016/02/making-a-service-worker/)
+
+### App Shell Architecture
+
+> An application shell (or app shell) architecture is one way to build a Progressive Web App that reliably and instantly loads on your users' screens, similar to what you see in native applications.
+
+By using an app shell, your application will be fast as speed is its primary focus. The application shell should:
+
+1. Render and cache static content
+2. Load quickly
+3. Cache the shell loads
+4. Dynamically display the apps content
+
+<center>
+  <figure>
+    <img width="60%" src="https://developers.google.com/web/updates/images/2015/11/appshell/appshell-1.jpg" alt="app shell"/>
+    <figcaption>App Shell</figcaption>
+  </figure>
+</center>
+
+_Recommended Reading: [bit.ly/app-shell](https://bit.ly/app-shell)_
+
+---
+
+## User Engagement
+
+Progressive Web Apps are not native mobile apps. So how can we create something that provides the same level (or better) of engagement that native apps do?
+
+### Icons and Colours
+
+By customising the icons and colours of your website you provide familiarity and increase engagement. This will lead to users returning to your website.
+
+#### Icons
+
+When visiting your Progressive Web App, the browser will fetch an icon from the HTML. This icon will be used in various places, e.g. the browser tab, recent app switch, the new (or recently visited) tab page, and more.
+
+To support all browsers the following tags should be added to the `<head>` of each page:
+
+```
+<!-- icon in the highest resolution we need it for -->
+<link rel="icon" sizes="192x192" href="icon.png">
+
+<!-- reuse same icon for Safari -->
+<link rel="apple-touch-icon" href="ios-icon.png">
+<!-- multiple icons for IE -->
+
+<meta name="msapplication-square310x310logo" content="icon_largetile.png">
+```
+
+#### Colours
+
+The browser (and some platform elements) can be modified by using different `<meta>` tags. By modifying these the user’s experience can be vastly improved. Elements that can be changed include the address bar and the status bar on a mobile device.
+
+<center>
+  <figure>
+    <img src="https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/imgs/status-bar-translucent-2x.png" alt="Translucent Status Bar"/>
+    <figcaption>Translucent Status Bar</figcaption>
+  </figure>
+</center>
+
+Using the `meta` tag `<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">`the default status bar colour is changed to `black-translucent`.
+
+_Recommended Reading:_
+
+1. _[bit.ly/color-custom](https://bit.ly/color-custom)_
+2. _[bit.ly/manifest-json](https://bit.ly/manifest-json)_
+3. _[tomitm.github.io/appmanifest](https://tomitm.github.io/appmanifest)_
+
+### Push Notifications
+
+There are three parts to a Progressive Web App push Notification:
+
+1. Subscribe user
+2. Save Subscription
+3. Send notification from Google Cloud
+
+Fortunately for us Chrome has a [Web Push Notification API](https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications/) that does the trick.
+
+_Recommended Reading:_
+
+1. _[bit.ly/push-notifications-google](https://bit.ly/push-notifications-google)_
+2. _[bit.ly/push-notifications-dean](https://bit.ly/push-notifications-dean)_
+
+---
+
+## More Reliable Application
+
+### Caching
+
+With Progressive Web Apps we are finally able to programmatically decide how to cache. Have no idea what I mean? Check out the recommended reading to fully understand.
+
+_Recommended Reading: [bit.ly/sw-toolbox](https://bit.ly/sw-toolbox)_
+
+### Save-Data Header
+
+> The Save-Data client hint request header available in Chrome, Opera, and Yandex browsers enables developers to deliver fast and light applications to users who have opted-in to "data savings" mode in their browser.
+
+This sounds great, but what does it mean? Simply put, if your site visitor has opted for this, they will receive a scaled down version of your site. They will not receive hi-resolution images (or perhaps no images at all), but they will still be able to access your site when their signal is low.
+
+_Recommended Reading:
+[https://deanhume.com/home/blogpost/service-workers--save-your-users-data-using-the-save-data-header/10139](https://deanhume.com/home/blogpost/service-workers--save-your-users-data-using-the-save-data-header/10139)_
+
+## Where can I find some Progressive Web Apps?
+
+The Opera Dev Relations team has put together a website listing loads of Progressive Web Apps already up and running https://pwa.rocks/. Make sure to have a look through, I’m sure you’ll recognise a few.
+
+---
+
+All of the above only scratches the surface of Progressive Web Apps and how to get started. After attending this talk I’m definitely inspired to create my own and can see unlimited possibilities with them.
+
+I’d love to know what are some of your favourite Progressive Web Apps? Have you ever built one? Were my notes useful? [Tweet me](https://twitter.com/tanya_powell) and let me know :)
