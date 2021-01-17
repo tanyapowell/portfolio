@@ -24,11 +24,11 @@ const Footer = () => (
       <ExternalLink href="mailto:hello@tanyapowell.co.uk">{email}</ExternalLink>
     </div>
 
-    <div className="flex space-x-4 mb-4">
+    {/* <div className="flex space-x-4 mb-4">
       <Link link="/appearances">/appearances</Link>
       <Link link="/uses">/uses</Link>
       <Link link="/tweets">/tweets</Link>
-    </div>
+    </div> */}
   </footer>
 );
 

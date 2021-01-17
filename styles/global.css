@@ -26,6 +26,15 @@ html {
   transition: background-color 0.1 ease-in-out;
 }
 
+.prose a {
+  color: #d81e5b;
+  text-decoration: none;
+}
+
+.prose a:hover {
+  color: #0492c2;
+}
+
 a:hover {
   color: #d81e5b;
   fill: none;

@@ -1,0 +1,24 @@
+import { posts } from '@/utils/getAllBlogPosts';
+import BlogPostPreview from '@/components/BlogPostPreview';
+import Text from '@/components/Text';
+import Title from '@/components/Title';
+
+export const meta = {
+  title: 'Digital Garden',
+};
+
+export default ({ children }) => {
+  return (
+    <>
+      <Title>{meta.title}</Title>
+      <Text>{children}</Text>
+      {posts.map((post) => (
+        <BlogPostPreview key={post.link} blogPost={post} />
+      ))}
+    </>
+  );
+};
+
+🤔 *What's a Digital Garden?*
+
+😀 *It's the intersection of a notebook and a blog. I'll be sharing seeds of thoughts to be cultivated/blossom in public*

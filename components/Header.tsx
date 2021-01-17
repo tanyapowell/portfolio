@@ -5,13 +5,13 @@ const navItems = [
     name: 'About',
     link: 'about',
   },
+  // {
+  //   name: 'Dashboard',
+  //   link: 'dashboard',
+  // },
   {
-    name: 'Dashboard',
-    link: 'dashboard',
-  },
-  {
-    name: 'Notes',
-    link: 'notes',
+    name: 'Blog',
+    link: 'blog',
   },
 ];
 

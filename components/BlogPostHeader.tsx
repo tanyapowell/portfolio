@@ -6,9 +6,10 @@ interface Props {
   isPreview?: boolean;
 }
 
-const HeadNote = ({ meta, isPreview }: Props) => {
+const BlogPostHeader
+ = ({ meta, isPreview }: Props) => {
   return isPreview ? (
-    <div className="flex justify-between items-center mb-8">
+    <div className="flex justify-between items-center mb-4">
       <h2 className="font-display font-bold leading-relaxed text-3xl md:text-4xl tracking-tight">{meta.title}</h2>
       <p className="font-body">{meta.date}</p>
     </div>
@@ -17,4 +18,4 @@ const HeadNote = ({ meta, isPreview }: Props) => {
   );
 };
 
-export default HeadNote;
+export default BlogPostHeader;

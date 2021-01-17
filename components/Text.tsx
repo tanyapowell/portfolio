@@ -2,6 +2,6 @@ interface Props {
   children: string;
 }
 
-const Text = ({ children }: Props) => <p className="leading-loose font-body mb-8">{children}</p>;
+const Text = ({ children }: Props) => <div className="leading-loose font-body mb-8 prose">{children}</div>;
 
 export default Text;
