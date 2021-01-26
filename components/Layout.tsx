@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 interface Props {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  children: Element;
+  children: any;
   pageTitle: string;
   description: string;
 }
