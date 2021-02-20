@@ -15,7 +15,7 @@
     "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^10.2.1",
     "framer-motion": "^3.2.1",
-    "next": "10.0.5",
+    "next": "10.0.7",
     "next-mdx-enhanced": "^5.0.0",
     "postcss": "^8.2.2",
     "react": "17.0.1",
