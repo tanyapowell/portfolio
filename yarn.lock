@@ -5372,12 +5372,17 @@ postcss-nested@5.0.5:
   dependencies:
     postcss-selector-parser "^6.0.4"
 
-postcss-nesting@^7.0.0, postcss-nesting@^7.0.1:
+postcss-nesting@^7.0.0:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-7.0.1.tgz#b50ad7b7f0173e5b5e3880c3501344703e04c052"
   integrity sha512-FrorPb0H3nuVq0Sff7W2rnc3SmIcruVC6YwpcS+k687VxyxO33iE1amna7wHuRVzM8vfiYofXSBHNAZ3QhLvYg==
   dependencies:
     postcss "^7.0.2"
+
+postcss-nesting@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-8.0.0.tgz#94645b3e6e261f00581bc23c5ae7070220704829"
+  integrity sha512-zxxjODoplKlNhUG+B+FjhYliNv52dGnAjb06b6PQjTbNGY24hwqxHmRtTQkcl9pEr2W4+BB09GzMPFNerrOvcw==
 
 postcss-overflow-shorthand@^2.0.0:
   version "2.0.0"
