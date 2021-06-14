@@ -17,7 +17,7 @@
     "framer-motion": "^4.1.17",
     "next": "10.0.5",
     "next-mdx-enhanced": "^5.0.0",
-    "postcss": "^8.3.2",
+    "postcss": "^8.3.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet-async": "^1.0.9",
