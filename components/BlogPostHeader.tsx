@@ -6,8 +6,7 @@ interface Props {
   isPreview?: boolean;
 }
 
-const BlogPostHeader
- = ({ meta, isPreview }: Props) => {
+const BlogPostHeader = ({ meta, isPreview }: Props) => {
   return isPreview ? (
     <div className="flex justify-between items-center mb-4">
       <h2 className="font-display font-bold leading-relaxed text-3xl md:text-4xl tracking-tight">{meta.title}</h2>
