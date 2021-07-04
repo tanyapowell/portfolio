@@ -10,7 +10,7 @@ class MainDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+          <link rel="icon" type="image/png" href="/images/favicon.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Handlee&family=Quattrocento+Sans:wght@400;700&display=swap"
