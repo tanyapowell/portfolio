@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import PublicSpeakingCards from '@/components/PublicSpeakingCards';
 import Text from '@/components/Text';
 import Title from '@/components/Title';
+import HorizontalRule from '../components/HorizontalRule';
 
 const words = ['software engineer', 'Londoner', 'mentor', 'public speaker'];
 const talks = [
@@ -41,11 +42,11 @@ const Home = () => {
         technology sector and my voluntary experiences. Scroll down to find out more about me and feel free to get in
         touch with me via social media`}
       </Text>
-
+      <HorizontalRule />
       <h2 className="font-display font-bold leading-relaxed text-2xl md:text-4xl my-4 text-gray-800">
         Talks and podcast appearances
       </h2>
-      <Text>Check out some of the talks and podcast appearances I made during 2020</Text>
+      <Text textSize="text-xl">Check out some of the talks and podcast appearances I made during 2020</Text>
       <PublicSpeakingCards talks={talks} />
     </>
   );

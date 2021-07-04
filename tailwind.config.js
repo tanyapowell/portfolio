@@ -7,8 +7,8 @@ module.exports = {
     // good to know: add default line height https://tailwindcss.com/docs/font-size#app
     extend: {
       fontFamily: {
-        display: ['Quattrocento Sans', ...defaultTheme.fontFamily.sans],
-        body: ['Inter', ...defaultTheme.fontFamily.sans],
+        display: ['Handlee', ...defaultTheme.fontFamily.sans],
+        body: ['Quattrocento Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         // custom light-gray tones
@@ -34,11 +34,11 @@ module.exports = {
       typography: (theme) => ({
         default: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.900'),
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.dark.100'),
             },
             h3: {
               fontWeight: '600',
@@ -64,6 +64,10 @@ module.exports = {
             blockquote: {
               color: theme('colors.gray.900'),
               borderLeftColor: theme('colors.gray.200'),
+            },
+            body: {
+              fontSize: '1.25 rem',
+              lineHeight: '3.0 rem',
             },
           },
         },

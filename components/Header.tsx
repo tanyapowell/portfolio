@@ -1,24 +1,24 @@
 import Link from '@/components/Link';
 
 const navItems = [
-  {
-    name: 'About',
-    link: 'about',
-  },
+  // {
+  //   name: 'About',
+  //   link: 'about',
+  // },
   // {
   //   name: 'Dashboard',
   //   link: 'dashboard',
   // },
-  {
-    name: 'Blog',
-    link: 'blog',
-  },
+  // {
+  //   name: 'Blog',
+  //   link: 'blog',
+  // },
 ];
 
 const Header = () => (
-  <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-4 mx-auto bg-white dark:bg-black bg-opacity-60">
+  <nav className="sticky-nav flex justify-between items-center  w-full px-4 mx-auto bg-white dark:bg-black bg-opacity-10">
     <Link link="/" isNav>
-      Home
+      <div className="logo font-display flex items-center justify-center">tp</div>
     </Link>
     <div>
       {navItems.map((item) => (

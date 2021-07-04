@@ -11,17 +11,18 @@ const footerItems = [
 ];
 
 const Footer = () => (
-  <footer className="flex flex-col items-center mb-8">
-    <div className="flex space-x-4 mb-4">
+  <footer className="flex flex-col items-center my-8">
+    <div className="flex space-x-4">
       {footerItems.map((item) => (
         <React.Fragment key={item.platform}>
           <span className="sr-only">{item.platform}</span>
           <Link link={`https://${item.platform}.com/${item.user}`}>{item.svg}</Link>
         </React.Fragment>
       ))}
-
       <span className="sr-only">Email</span>
-      <ExternalLink href="mailto:hello@tanyapowell.co.uk">{email}</ExternalLink>
+      <ExternalLink href="mailto:hello@tanyapowell.co.uk" marginBottom="0">
+        {email}
+      </ExternalLink>
     </div>
 
     {/* <div className="flex space-x-4 mb-4">

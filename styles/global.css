@@ -2,14 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-bg-color: #fff;
+  --main-accent-color: #d81e5b;
+  --light-font-color: #eadeda;
+}
+
 ::selection {
-  background-color: #d81e5b;
-  color: #fefefe;
+  background-color: var(--main-accent-color);
+  color: var(--light-font-color);
 }
 
 html {
   min-width: 320px;
   scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(-45deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1));
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #__next {
@@ -27,7 +51,7 @@ html {
 }
 
 .prose a {
-  color: #d81e5b;
+  color: var(--main-accent-color);
   text-decoration: none;
 }
 
@@ -36,7 +60,48 @@ html {
 }
 
 a:hover {
-  color: #d81e5b;
+  color: var(--main-accent-color);
   fill: none;
-  stroke: #d81e5b;
+  stroke: var(--main-accent-color);
+}
+
+.logo {
+  position: relative;
+  width: 50px;
+  height: 28.87px;
+  margin: 14.43px 0;
+  border-left: solid 3px var(--main-accent-color);
+  border-right: solid 3px var(--main-accent-color);
+}
+
+.logo:before,
+.logo:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 35.36px;
+  height: 35.36px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 4.3223px;
+}
+
+.logo:before {
+  top: -17.6777px;
+  border-top: solid 4.2426px var(--main-accent-color);
+  border-right: solid 4.2426px var(--main-accent-color);
+}
+
+.logo:after {
+  bottom: -17.6777px;
+  border-bottom: solid 4.2426px var(--main-accent-color);
+  border-left: solid 4.2426px var(--main-accent-color);
+}
+
+.logo:hover,
+.logo:hover::before,
+.logo:hover::after {
+  border-color: var(--light-font-color);
 }

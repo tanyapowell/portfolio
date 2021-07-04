@@ -20,7 +20,7 @@ const Layout = ({ children, pageTitle, description }: Props) => (
     </Head>
     <main>
       <Header />
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mt-8 mb-16 w-5/6 md:w-full">
+      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto my-6 p-4 md:p-14 w-5/6 md:w-full bg-white bg-opacity-25">
         {children}
       </div>
       <Footer />
