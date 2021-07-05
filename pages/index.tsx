@@ -34,7 +34,11 @@ const Home = () => {
 
   return (
     <>
-      <Title>{`Hey! I'm Tanya Powell and a ${word}`}</Title>
+      <span className="h-56 md:h-36">
+        <Title>
+          Hey! My name is Tanya Powell and I am a <span style={{ color: 'var(--main-accent-color)' }}>{word}</span>
+        </Title>
+      </span>
       <Text>
         {`During the day I make software and during the night I usually do the same as a creative outlet or to help
         non-profit organisations. When I'm not at my desk you can either find me in my kitchen practicing for Top Chef

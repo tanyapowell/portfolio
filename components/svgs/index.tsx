@@ -47,4 +47,34 @@ const twitter = (
   </svg>
 );
 
-export { email, github, instagram, linkedin, mic, twitter };
+const code = (
+  <svg
+    viewBox="0 0 125 100"
+    fillRule="evenodd"
+    clipRule="evenodd"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeMiterlimit="1.5"
+  >
+    <path
+      d="M88.162,83.966c1.317,-0.265 28.301,-31.724 28.405,-32.95c0.077,-0.901 -26.844,-31.81 -28.893,-35.131"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="6.25px"
+    />
+    <path
+      d="M38.306,15.885c-1.318,0.265 -28.301,31.724 -28.406,32.95c-0.076,0.901 26.844,31.81 28.894,35.131"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="6.25px"
+    />
+    <path
+      d="M51.361,92.517c0.149,-2.966 22.26,-75.748 24.72,-84.037"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="4.17px"
+    />
+  </svg>
+);
+
+export { email, github, instagram, linkedin, mic, twitter, code };

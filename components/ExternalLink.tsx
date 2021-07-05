@@ -6,7 +6,7 @@ interface Props {
 }
 
 const ExternalLink = ({ href, children, marginBottom = 'mb-4' }: Props) => {
-  const classnames = `flex text-sm transition ${marginBottom}`;
+  const classnames = `flex transition ${marginBottom} w-full justify-center`;
   return (
     <a className={classnames} target="_blank" rel="noopener noreferrer" href={href}>
       {children}

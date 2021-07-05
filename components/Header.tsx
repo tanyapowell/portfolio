@@ -13,10 +13,14 @@ const navItems = [
   //   name: 'Blog',
   //   link: 'blog',
   // },
+  {
+    name: 'Talks',
+    link: 'technical-talks',
+  },
 ];
 
 const Header = () => (
-  <nav className="sticky-nav flex justify-between items-center  w-full px-4 mx-auto bg-white dark:bg-black bg-opacity-10">
+  <nav className="sticky-nav flex justify-between items-center w-full px-4 mx-auto bg-white dark:bg-black bg-opacity-10">
     <Link link="/" isNav>
       <div className="logo font-display flex items-center justify-center">tp</div>
     </Link>

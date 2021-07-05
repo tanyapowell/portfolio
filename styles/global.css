@@ -65,6 +65,10 @@ a:hover {
   stroke: var(--main-accent-color);
 }
 
+button:hover {
+  border-color: var(--main-accent-color);
+}
+
 .logo {
   position: relative;
   width: 50px;
@@ -104,4 +108,9 @@ a:hover {
 .logo:hover::before,
 .logo:hover::after {
   border-color: var(--light-font-color);
+}
+
+img {
+  border-radius: 50%;
+  margin: auto;
 }

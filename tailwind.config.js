@@ -46,10 +46,10 @@ module.exports = {
             },
             'ol li:before': {
               fontWeight: '600',
-              color: theme('colors.gray.500'),
+              color: theme('colors.gray.900'),
             },
             'ul li:before': {
-              backgroundColor: theme('colors.gray.400'),
+              backgroundColor: theme('colors.gray.900'),
             },
             code: {
               color: theme('colors.gray.900'),
