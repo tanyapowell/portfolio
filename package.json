@@ -15,7 +15,7 @@
     "@next/mdx": "^11.1.2",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.7",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^5.0.2",
     "next": "^11.1.2",
     "next-mdx-enhanced": "^5.0.0",
     "postcss": "^8.3.9",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@types/node": "^16.9.1",
     "@types/react": "^17.0.27",
-    "@types/react-dom": "^17.0.9",
+    "@types/react-dom": "^17.0.10",
     "@types/webpack-env": "^1.16.3",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
