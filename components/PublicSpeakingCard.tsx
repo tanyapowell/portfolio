@@ -8,6 +8,7 @@ interface Props extends Talks {
 
 const PublicSpeakingCard = ({ link, title, description, type }: Props) => {
   const icon = type === 'techTalk' ? code : mic;
+
   return (
     <ExternalLink href={link}>
       <div className="grid grid-cols-8 w-full mb-7 gap-4 last:mb-0">

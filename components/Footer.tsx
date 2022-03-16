@@ -7,7 +7,7 @@ import { email, github, linkedin, twitter } from '@/components/svgs';
 const footerItems = [
   { platform: 'twitter', user: 'tanya_powell', svg: twitter },
   { platform: 'github', user: 'tanyapowell', svg: github },
-  { platform: 'linkedin', user: '/in/tanyapowell', svg: linkedin },
+  { platform: 'linkedin', user: 'in/tanyapowell', svg: linkedin },
 ];
 
 const Footer = () => (

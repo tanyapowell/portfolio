@@ -1,10 +1,10 @@
 import Link from '@/components/Link';
 
 const navItems = [
-  // {
-  //   name: 'About',
-  //   link: 'about',
-  // },
+  {
+    name: 'About',
+    link: 'about',
+  },
   // {
   //   name: 'Dashboard',
   //   link: 'dashboard',

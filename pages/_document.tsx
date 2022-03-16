@@ -13,7 +13,7 @@ class MainDocument extends Document {
           <link rel="icon" type="image/png" href="/images/favicon.png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Handlee&family=Quattrocento+Sans:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter&family=Quattrocento+Sans:wght@400;700&display=swap"
             rel="stylesheet"
           />
         </Head>

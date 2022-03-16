@@ -7,7 +7,7 @@ module.exports = {
     // good to know: add default line height https://tailwindcss.com/docs/font-size#app
     extend: {
       fontFamily: {
-        display: ['Handlee', ...defaultTheme.fontFamily.sans],
+        display: ['Inter', ...defaultTheme.fontFamily.sans],
         body: ['Quattrocento Sans', ...defaultTheme.fontFamily.sans],
       },
       colors: {

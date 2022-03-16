@@ -1,5 +1,5 @@
 interface Props {
-  children: string;
+  children: any;
   textSize?: string;
 }
 
