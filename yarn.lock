@@ -3312,10 +3312,10 @@ postcss-nested@5.0.6:
   dependencies:
     postcss-selector-parser "^6.0.6"
 
-postcss-nesting@^10.1.7, postcss-nesting@^10.1.8:
-  version "10.1.8"
-  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-10.1.8.tgz#1675542cfedc3dc9621993f3abfdafa260c3a460"
-  integrity sha512-txdb3/idHYsBbNDFo1PFY0ExCgH5nfWi8G5lO49e6iuU42TydbODTzJgF5UuL5bhgeSlnAtDgfFTDG0Cl1zaSQ==
+postcss-nesting@^10.1.10, postcss-nesting@^10.1.7:
+  version "10.1.10"
+  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-10.1.10.tgz#9c396df3d8232cbedfa95baaac6b765b8fd2a817"
+  integrity sha512-lqd7LXCq0gWc0wKXtoKDru5wEUNjm3OryLVNRZ8OnW8km6fSNUuFrjEhU3nklxXE2jvd4qrox566acgh+xQt8w==
   dependencies:
     "@csstools/selector-specificity" "^2.0.0"
     postcss-selector-parser "^6.0.10"
