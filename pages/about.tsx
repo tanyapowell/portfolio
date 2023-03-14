@@ -29,8 +29,7 @@ const About = () => (
       Job Title
     </h3>
     <Text>
-      Tanya Powell is the Co-CTO at <a href="https://codingblackfemales.com">Coding Black Females</a> and Founder of
-      Beyond Fantasy
+      Tanya Powell is the Co-CTO at <a href="https://codingblackfemales.com">Coding Black Females</a>
     </Text>
     <h3 className="font-display leading-loose font-bold text-1xl md:text-2xl my-6 text-gray-800 prose lg:prose-x">
       Long, 3rd Person
@@ -40,10 +39,6 @@ const About = () => (
       both the training and technology strategies and visions of the largest network on Black Female Technologists in
       the UK. Prior to that, Tanya was a Senior Software Engineer focused on the frontend. As an educator, Tanya has
       taught many people entering the world of technology and continually mentors.
-    </Text>
-    <Text>
-      In 2022 she&apos;ll be launching the creative hub Beyond Fantasy and cannot wait to share this new venture with
-      the world
     </Text>
 
     <h3 className="font-display leading-loose font-bold text-1xl md:text-2xl my-6 text-gray-800 prose lg:prose-x">
@@ -55,9 +50,6 @@ const About = () => (
       role is to lead both the training and technology strategies and visions of the largest network on Black Female
       Technologists in the UK. Prior to that, I was a Senior Software Engineer focused on the frontend. I have taught
       many people entering the world of technology and I continue to mentor to this very day.
-    </Text>
-    <Text>
-      In 2022 I&apos;ll be launching the creative hub Beyond Fantasy and I cannot wait to share this with you all
     </Text>
 
     <h3 className="font-display leading-loose font-bold text-1xl md:text-2xl my-6 text-gray-800 prose lg:prose-x">
