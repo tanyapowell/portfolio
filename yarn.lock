@@ -843,10 +843,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@^13.5.5":
-  version "13.5.5"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.5.5.tgz#ce1ff29ab424f2335a02ac6a662f56938c275b5d"
-  integrity sha512-vIUvyICrCHiCAYU4HY/h0DgeFyEZBdRTPR9TTU79Q2u01M9DxrciE5hBwXKIJkzUTa4Ia5nszLt0o9GxpBIgMQ==
+"@next/mdx@^14.1.2":
+  version "14.1.2"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-14.1.2.tgz#e16bb8249edfc7cd7402602b810daa26017680c2"
+  integrity sha512-BTA7itn4S9HHxHoEgi0su05RDr9AuRMuGv1KnA79qtzSKTT0DPlWlMpRhFB2o7m4IKo3Lit2A2j4EqAEdzDz5g==
   dependencies:
     source-map "^0.7.0"
 
