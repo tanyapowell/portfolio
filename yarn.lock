@@ -1030,10 +1030,10 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
 
-"@types/webpack-env@^1.18.2":
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.18.2.tgz#0264bc30c0c4a073118ce5b26c5ef143da4374df"
-  integrity sha512-BFqcTHHTrrI8EBmIzNAmLPP3IqtEG9J1IPFWbPeS/F0/TGNmo0pI5svOa7JbMF9vSCXQCvJWT2gxLJNVuf9blw==
+"@types/webpack-env@^1.18.5":
+  version "1.18.5"
+  resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.18.5.tgz#eccda0b04fe024bed505881e2e532f9c119169bf"
+  integrity sha512-wz7kjjRRj8/Lty4B+Kr0LN6Ypc/3SymeCCGSbaXp2leH0ZVg/PriNiOwNj4bD4uphI7A8NXS4b6Gl373sfO5mA==
 
 "@typescript-eslint/eslint-plugin@^4.33.0":
   version "4.33.0"
